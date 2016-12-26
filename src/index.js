@@ -14,7 +14,7 @@ import NotFound from './components/NotFound';
 // ** Our react router is also a component**
 const Root = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/react-tutorial">
 			<div>
 				<Match exactly pattern="/" component={StorePicker}/>
 				<Match pattern="/store/:storeId" component={App}/> 
